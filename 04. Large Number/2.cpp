@@ -10,6 +10,7 @@ string sum(string s1, string s2) {
 	reverse(s1.begin(), s1.end());
 	reverse(s2.begin(), s2.end());
 	int du = 0;
+	for(int i=0; i<n1; i++) {   	// toan cap 1
 		int sum = (s1[i] - '0') + (s2[i] - '0') + du;
 		s += (sum%10 + '0');
 		du = sum/10;
